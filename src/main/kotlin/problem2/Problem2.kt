@@ -1,5 +1,8 @@
 package com.github.he11pme.problem2
 
+import kotlin.math.ceil
+import kotlin.math.log
+
 var answer: String = ""
     private set
 
@@ -21,13 +24,8 @@ private fun readInput(): Input {
 
 private fun solution(input: Input): Int {
 
-    var n = input.n.toInt()
-    var result = 0
-
-    while (n > 1) {
-        result += n % 2 + 1
-        n /= 2
-    }
+    val n = input.n.toDouble()
+    val result = ceil(log(n, 2.0)).toInt()
 
     return result
 }

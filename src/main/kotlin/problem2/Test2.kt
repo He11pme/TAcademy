@@ -20,7 +20,7 @@ private val tests = listOf(
     Test(
         "My test 1",
         Input("7"),
-        "4"
+        "3"
     ),
 
     createLongTest()
